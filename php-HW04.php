@@ -1,6 +1,6 @@
 <?php 
 
-function greeting($name) {
+function greeting($name = "Гость") {
 	echo "Привет $name! ";
 	$today = getdate();
 	if ( $today[wday] < 6 ) {
@@ -12,9 +12,13 @@ function greeting($name) {
 
 greeting("Alina");
 
+echo "<br><br><i>greeting()</i>:<br><br>";
+
+greeting();
+
 echo "<br><br><i>greeting_second('Alina', 1)</i>:<br><br>";
 
-function greeting_second($name, $day) {
+function greeting_second($name = "Гость", $day) {
 	echo "Привет $name! ";
 	switch ($day) {
 		case 1:
@@ -41,4 +45,7 @@ function greeting_second($name, $day) {
 
 greeting_second("Alina", 1);
 
+echo "<br><br><i>greeting_second()</i>:<br><br>";
+
+greeting_second();
 ?>
