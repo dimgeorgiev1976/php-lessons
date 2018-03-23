@@ -1,7 +1,6 @@
 
 	<?php
-
-	$bookName = array("451° по Фаренгейту", 
+	bookName = array("451° по Фаренгейту", 
 		"Шантарам", 
 		"1984", 
 		"Мастер и Маргарита", 
@@ -19,5 +18,4 @@
 	for ($i = 0; $i < count($bookName) ; $i++) {
 	echo "<li> $bookName[$i] </li>";
 	}
-	echo '</ol>';
 	?>
