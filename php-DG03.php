@@ -21,6 +21,6 @@
 		foreach ($books as $bookName => $author) {
 		echo "<li><strong>$author</strong>:<br>$bookName</li>";
 		}
-		"</ol>";
+		echo "</ol>";
 
 		?>
